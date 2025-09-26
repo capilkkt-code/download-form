@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unduh Formulir Administrasi Kependudukan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .form-card {
+            transition: all 0.3s ease;
+        }
+        .form-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .download-btn {
+            transition: all 0.2s ease;
+        }
+        .download-btn:hover {
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen py-8">
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+        <!-- Forms Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Form 1 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-emerald-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir KTP</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pembuatan atau perpanjangan Kartu Tanda Penduduk (KTP)</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/10cKxE0_1VO2B0ramQjDuoZnsc1obZhDg/view?usp=sharing')" class="download-btn w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 2 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-purple-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir KK</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pembuatan atau perubahan Kartu Keluarga (KK)</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/12IT8Uy-hWdiMIo9LwrX1TjXY2gMZ2dkN/view?usp=sharing')" class="download-btn w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 3 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-pink-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Akta Kelahiran</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pembuatan Akta Kelahiran untuk bayi baru lahir</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/14bq_McYd9CQA02oT7M2DtzUMLJorks7O/view?usp=sharing')" class="download-btn w-full bg-pink-600 hover:bg-pink-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 4 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-indigo-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Pindah</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pindah alamat dan mutasi kependudukan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/16tTIk65XIrZiF-5HioG8bzf2stUMeW-G/view?usp=sharing')" class="download-btn w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 5 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-yellow-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Surat Keterangan</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan surat keterangan kependudukan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/18GnM0ibzxRPs4XpZfIPeRJ5ECzFPw0e-/view?usp=sharing')" class="download-btn w-full bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 6 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-teal-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Nikah</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pencatatan pernikahan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1DYIUT0tlRXQgnSlkZV1ZAtG_ZxMMcSMt/view?usp=sharing')" class="download-btn w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 7 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-red-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Akta Kematian</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pembuatan Akta Kematian</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1G8pFvQR9RZutuw_1FTgFfSt-m7uZjl5D/view?usp=sharing')" class="download-btn w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 8 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-orange-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Cerai</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pencatatan perceraian</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1HYZABO4df9LnAl6_kuP1wQjrcFEHpkFP/view?usp=sharing')" class="download-btn w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 9 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-cyan-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Adopsi</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pencatatan adopsi anak</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1JGp7b37k4iGSNHqiyEhzwpjBExxYoSYH/view?usp=sharing')" class="download-btn w-full bg-cyan-600 hover:bg-cyan-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 10 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-emerald-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Pengakuan</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pengakuan dan pengesahan anak</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1Q_dyX0YA961D2uLQigoeESkKz2h0rYVY/view?usp=sharing')" class="download-btn w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 11 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-violet-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Perubahan</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan perubahan data kependudukan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1W3ACs9FavSjtve6MwClNMEbtmCohvrGQ/view?usp=sharing')" class="download-btn w-full bg-violet-600 hover:bg-violet-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 12 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-rose-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Pembatalan</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan pembatalan dokumen kependudukan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1X45v1qy_cSY8SQGzabeoiw7mpwrSrhmC/view?usp=sharing')" class="download-btn w-full bg-rose-600 hover:bg-rose-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 13 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-lime-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Duplikat</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan duplikat dokumen kependudukan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1Zu6VuAa2EQFI7fCGL7MQ9DGDFTP6pBBt/view?usp=sharing')" class="download-btn w-full bg-lime-600 hover:bg-lime-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 14 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-sky-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir WNA</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan dokumen untuk Warga Negara Asing</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1jQ8G6-QL5cWwo_mzv6Kn4EQFYxGqchtt/view?usp=sharing')" class="download-btn w-full bg-sky-600 hover:bg-sky-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 15 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-amber-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Khusus</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan layanan khusus kependudukan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1noZGabS3Guo50KWDb2OTh_ZE6EBFTMqL/view?usp=sharing')" class="download-btn w-full bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 16 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-blue-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Tambahan 1</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan layanan administrasi tambahan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1qhIIN0JYAZ2jJN6guTntH-1gfa_K0Pu9/view?usp=sharing')" class="download-btn w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 17 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-green-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Tambahan 2</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan layanan administrasi tambahan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1swP-wqLwRx-qmux7T7yHCrfiG6i2U0e4/view?usp=sharing')" class="download-btn w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 18 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-gray-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Tambahan 3</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan layanan administrasi tambahan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1xYrchvx25swtAHwAOmuSluKi9YLR8L3o/view?usp=sharing')" class="download-btn w-full bg-gray-600 hover:bg-gray-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+
+            <!-- Form 19 -->
+            <div class="form-card bg-white rounded-xl shadow-md p-6 border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-slate-100 p-3 rounded-lg">
+                        <svg class="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 ml-3">Formulir Tambahan 4</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Formulir permohonan layanan administrasi tambahan</p>
+                <button onclick="downloadFromDrive('https://drive.google.com/file/d/1yUNeuKUalWl3I5FKzauGajd7qJShEGq0/view?usp=sharing')" class="download-btn w-full bg-slate-600 hover:bg-slate-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Unduh Formulir</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="mt-12 bg-blue-50 rounded-xl p-6 border border-blue-200">
+            <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                    <div class="bg-blue-100 p-2 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Informasi Penting</h3>
+                    <p class="text-gray-700">
+                        Klik tombol "Unduh Formulir" untuk mengakses file dari Google Drive. 
+                        File akan terbuka di tab baru dan siap untuk diunduh ke perangkat Anda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function downloadFromDrive(driveUrl) {
+            // Convert Google Drive view URL to direct download URL
+            const fileId = driveUrl.match(/\/d\/([a-zA-Z0-9-_]+)/)[1];
+            const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+            
+            // Open in new tab for download
+            window.open(downloadUrl, '_blank', 'noopener,noreferrer');
+            
+            // Show notification
+            showNotification();
+        }
+
+        function showNotification() {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
+            notification.innerHTML = `
+                <div class="flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Formulir sedang diunduh...</span>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+            }, 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98511387f458ce37',t:'MTc1ODg3MjAzOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
